@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Magic 8 Ball</string>
+
+    <string name="info_text">
+        Let the Magic 8 Ball tell you your future!
+        Press the button below or shake your device to get a response!
+    </string>
+
+    <string name="trigger_button">Shake the 8 Ball</string>
+    <string name="response_text">DEFAULT RESPONSE</string>
+
+    <string name="response_1">As I see it, yes</string>
+    <string name="response_2">Ask again later</string>
+    <string name="response_3">Better not tell you now</string>
+    <string name="response_4">My reply is no</string>
+    <string name="response_5">Most likely</string>
+    <string name="response_6">It is decidedly so</string>
+    <string name="response_7">Concentrate and ask again</string>
+    <string name="response_8">My sources say no</string>
+    <string name="response_9">Without a doubt</string>
+    <string name="response_10">Very doubtful</string>
+
+</resources>
