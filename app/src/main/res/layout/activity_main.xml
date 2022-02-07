@@ -24,7 +24,7 @@
         android:layout_gravity="center"
         android:padding="24dp"
         android:text="@string/response_text"
-        android:visibility="invisible"/>
+        />
 
 
 </LinearLayout>
