@@ -17,7 +17,14 @@ class Magic8BallViewModel : ViewModel() {
         Response(R.string.response_10),
     )
 
+    private var randNum = 0
+
     val currentResponseText: Int
-        get() = responseBank[(Math.random() * 10).toInt()].textResId
+        get() = responseBank[randNum].textResId
+
+    fun getRandNum():Int{
+        randNum = (Math.random() * 10).toInt()
+        return randNum
+    }
 
 }

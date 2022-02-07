@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         triggerButton = findViewById(R.id.trigger_button)
         responseTextView = findViewById(R.id.response_text)
 
-        //responseTextView.setText(magic8BallViewModel.currentResponseText)
+        responseTextView.setText(magic8BallViewModel.currentResponseText)
 
         triggerButton.setOnClickListener {
             getResponse()
@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
    private fun getResponse(){
+        magic8BallViewModel.getRandNum()
         val responseTextResId = magic8BallViewModel.currentResponseText
         responseTextView.setText(responseTextResId)
     }
