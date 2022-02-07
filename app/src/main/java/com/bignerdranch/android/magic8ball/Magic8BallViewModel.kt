@@ -4,4 +4,20 @@ import androidx.lifecycle.ViewModel
 
 class Magic8BallViewModel : ViewModel() {
 
+    private val responseBank = listOf(
+        Response(R.string.response_1),
+        Response(R.string.response_2),
+        Response(R.string.response_3),
+        Response(R.string.response_4),
+        Response(R.string.response_5),
+        Response(R.string.response_6),
+        Response(R.string.response_7),
+        Response(R.string.response_8),
+        Response(R.string.response_9),
+        Response(R.string.response_10),
+    )
+
+    val currentResponseText: Int
+        get() = responseBank[(Math.random() * 10).toInt()].textResId
+
 }

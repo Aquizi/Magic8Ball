@@ -14,19 +14,6 @@ class MainActivity : AppCompatActivity() {
         ViewModelProviders.of(this).get(Magic8BallViewModel::class.java)
     }
 
-    private val responseBank = listOf(
-        Response(R.string.response_1),
-        Response(R.string.response_2),
-        Response(R.string.response_3),
-        Response(R.string.response_4),
-        Response(R.string.response_5),
-        Response(R.string.response_6),
-        Response(R.string.response_7),
-        Response(R.string.response_8),
-        Response(R.string.response_9),
-        Response(R.string.response_10),
-    )
-
     private lateinit var triggerButton: Button
     private lateinit var responseTextView: TextView
 
@@ -46,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
 
    private fun getResponse(){
-        val responseTextResId = responseBank[(Math.random() * 10).toInt()].textResId
+        val responseTextResId = magic8BallViewModel.currentResponseText
         responseTextView.setText(responseTextResId)
         responseTextView.visibility = View.VISIBLE
     }
