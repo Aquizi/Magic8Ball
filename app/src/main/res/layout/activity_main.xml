@@ -23,8 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="24dp"
-        android:text="@string/response_text"
-        />
+        android:text="@string/response_text" />
 
 
 </LinearLayout>

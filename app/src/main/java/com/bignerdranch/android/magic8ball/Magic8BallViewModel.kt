@@ -1,5 +1,6 @@
 package com.bignerdranch.android.magic8ball
 
+import android.view.View
 import androidx.lifecycle.ViewModel
 
 class Magic8BallViewModel : ViewModel() {
@@ -17,14 +18,14 @@ class Magic8BallViewModel : ViewModel() {
         Response(R.string.response_10),
     )
 
-    private var randNum = 0
+    private var currentIndex = 0
 
     val currentResponseText: Int
-        get() = responseBank[randNum].textResId
+        get() = responseBank[currentIndex].textResId
 
-    fun getRandNum():Int{
-        randNum = (Math.random() * 10).toInt()
-        return randNum
+    fun getRandIndex():Int{
+        currentIndex = (Math.random() * 10).toInt()
+        return currentIndex
     }
 
 }

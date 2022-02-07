@@ -24,7 +24,6 @@
         android:layout_gravity="bottom|center"
         android:padding="24dp"
         android:layout_marginBottom="48dp"
-        android:text="@string/response_text"
-        />
+        android:text="@string/response_text" />
 
 </FrameLayout>
